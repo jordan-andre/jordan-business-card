@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centered SVG Animation</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+
+    <!-- Animated SVG Background -->
+    <div class="svg-background">
+        <svg viewBox="0 0 800 800" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+            <circle class="pulse-circle" cx="400" cy="400" r="300" fill="lightblue"></circle>
+        </svg>
+    </div>
+
+    <!-- Type Container -->
+    <div class="type-container">
+        <h1>Full Name</h1>
+        <h2>Title</h2>
+    </div>
+
+    <!-- Fixed Bottom Container -->
+    <div class="bottom-container">
+        <div class="icon">
+            <svg width="50" height="50" viewBox="0 0 24 24">
+                <circle cx="12" cy="12" r="10" fill="red"/>
+            </svg>
+        </div>
+        <div class="icon">
+            <svg width="50" height="50" viewBox="0 0 24 24">
+                <rect x="5" y="5" width="14" height="14" fill="green"/>
+            </svg>
+        </div>
+        <div class="icon">
+            <svg width="50" height="50" viewBox="0 0 24 24">
+                <polygon points="12,2 22,22 2,22" fill="blue"/>
+            </svg>
+        </div>
+        <div class="icon">
+            <svg width="50" height="50" viewBox="0 0 24 24">
+                <path d="M5 5h14v14H5z" stroke="black" fill="none"/>
+            </svg>
+        </div>
+    </div>
+
+</body>
+</html>

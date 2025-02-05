@@ -1,0 +1,139 @@
+/* Reset & General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    background: #f4f4f4;
+    position: relative;
+}
+
+/* Animated SVG Background */
+.svg-background {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    z-index: 0;
+}
+
+.svg-background svg {
+    width: 100%;
+    height: 100%;
+    display: block;
+    preserveAspectRatio: xMidYMid slice; /* Ensures the circle is always centered */
+}
+
+/* Circle Animation */
+.pulse-circle {
+    animation: pulse 2s infinite alternate ease-in-out;
+}
+
+/* Pulse Animation */
+@keyframes pulse {
+    from {
+        r: 250;
+        fill: lightblue;
+    }
+    to {
+        r: 300;
+        fill: deepskyblue;
+    }
+}
+
+/* Type Container */
+.type-container {
+    position: absolute;
+    top: 20%;
+    text-align: center;
+    color: #333;
+    z-index: 2;
+    width: 100%;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.type-container h1 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.type-container h2 {
+    font-size: 1.5rem;
+    font-weight: normal;
+}
+
+/* Fixed Bottom Container */
+.bottom-container {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 10px;
+    text-align: center;
+    z-index: 2;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+/* Icon Hover Effects */
+.icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    cursor: pointer;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+/* Hover Effect */
+.icon:hover {
+    transform: scale(1.2);
+    opacity: 0.8;
+}
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Mobile Layout */
+@media (max-width: 768px) {
+    .svg-background {
+        width: 150%; 
+        left: 30%;
+        transform: translateX(-50%);
+    }
+
+    .svg-background svg {
+        width: 150%;
+        height: 100%;
+    }
+
+    .type-container h1 {
+        font-size: 2rem;
+    }
+
+    .type-container h2 {
+        font-size: 1.2rem;
+    }
+
+    .bottom-container {
+        flex-wrap: nowrap;
+        justify-content: space-evenly;
+        padding: 15px;
+    }
+}

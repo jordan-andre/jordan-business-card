@@ -132,8 +132,16 @@ body {
     }
 
     .bottom-container {
-        flex-wrap: nowrap;
-        justify-content: space-evenly;
+        width: 100vw; /* Ensures it spans the full width */
+        display: flex;
+        justify-content: space-between; /* Ensures even spacing */
         padding: 15px;
+    }
+
+    .icon {
+        flex: 1; /* Ensures icons stretch evenly */
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 }

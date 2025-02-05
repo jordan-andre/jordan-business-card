@@ -112,17 +112,26 @@ body {
 
 /* Mobile Layout */
 @media (max-width: 768px) {
-    .svg-background {
-        width: 150%; 
-        left: 50%;
-        transform: translateX(-50%);
+    @media (max-width: 768px) {
+        .svg-background {
+            width: 200%; /* Expands SVG for mobile cropping */
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    
+        /* .svg-background svg {
+            width: 150%;
+            height: 100%;
+            display: block;
+        } */
+    
+        .pulse-circle {
+            cx: 50%;
+            cy: 50%;
+            transform-origin: center;
+        }
     }
-
-    .svg-background svg {
-        width: 150%;
-        height: 100%;
-    }
-
+    
     .type-container h1 {
         font-size: 2rem;
     }

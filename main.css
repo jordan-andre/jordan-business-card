@@ -5,18 +5,48 @@
   box-sizing: border-box;
 }
 
-body {
-  font-family: Arial, sans-serif;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-  overflow: hidden;
-  background: #f4f4f4;
-  position: relative;
+body{
+  background-color: #802e29;
+  font-family: "bodoni-urw", serif;
+}
+.card{
+    margin: auto;
+    position: relative;
+    width:300px;
+    height:450px;
+    background-color: #ffffff;
+    z-index: 70;
+   }
+
+  
+h1{
+  font-weight: bold;
+  font-size: 30px;
+  color: rgb(0, 0, 0);
+  text-align: right;
+  padding-right: 20px;
+  
+  
+}
+h2{
+  font-weight: normal;
+  font-size: 18px;
+  color: rgb(0, 0, 0);
+  text-align: right;
+  padding-right: 20px;
+  bottom: 0;
 }
 
+.logo-container{
+    fill: #172601;
+    stroke-width: 0px;
+    position: absolute;
+    width: 300px;
+    height: auto;
+    right: 50px;
+    bottom: 220px;
+  }
+   
 /* Animated SVG Background */
 .svg-background {
   position: absolute;
@@ -36,37 +66,38 @@ body {
   preserveaspectratio: xMidYMid slice; /* Ensures the circle is always centered */
 }
 
-#layer1 {
-  animation: layer1move 4s infinite;
-}
 
-@keyframes layer1move {
-  0% {
-    transform: translate(0, 4px);
+  #layer1 {
+    animation: layer1move 4s infinite;
   }
-  50% {
-    transform: translate(50px, 100px);
+  
+  @keyframes layer1move {
+    0% {
+      transform: translate(0, 4px);
+    }
+    50% {
+      transform: translate(50px, 100px);
+    }
+    100% {
+      transform: translate(0, 4px);
+    }
   }
-  100% {
-    transform: translate(0, 4px);
+  
+  #layer2 {
+    animation: layer2move 4s infinite;
   }
-}
-
-#layer2 {
-  animation: layer2move 4s infinite;
-}
-
-@keyframes layer2move {
-  0% {
-    transform: translate(0, 4px);
+  
+  @keyframes layer2move {
+    0% {
+      transform: translate(0, 4px);
+    }
+    50% {
+      transform: translate(-50px, -100px);
+    }
+    100% {
+      transform: translate(0, 4px);
+    }
   }
-  50% {
-    transform: translate(-50px, -100px);
-  }
-  100% {
-    transform: translate(0, 4px);
-  }
-}
 
 /* .fill {
   fill: #4f1116;
@@ -145,7 +176,7 @@ body {
   width: 100%;
   display: flex;
   justify-content: space-around;
-  background: rgba(255, 255, 255, 0.9);
+  background: none;
   padding: 10px;
   text-align: center;
   z-index: 2;

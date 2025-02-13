@@ -71,13 +71,17 @@ body {
 /* .fill {
   fill: #4f1116;
 } */
-.st1 {
+#layer1 {
   fill: #4f1116;
   stroke: #4f1116;
   stroke-width: 0.5673;
   stroke-linejoin: round;
   stroke-miterlimit: 10;
 }
+
+#layer2{
+ fill:#802F29;}
+
 /* .st2 {
   fill: #4f1116;
   stroke: #4f1116;
@@ -88,13 +92,13 @@ body {
   fill: #802f29;
 } */
 
-/* .fill {
+.fill {
   fill: none;
   stroke: #010101;
   stroke-width: 4.6735;
   stroke-linejoin: round;
   stroke-miterlimit: 10;
-} */
+}
 
 /* Circle Animation */
 .pulse-circle {

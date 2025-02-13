@@ -1,19 +1,14 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Centered SVG Animation</title>
-    <link rel="stylesheet" href="main.css">
-</head>
-<body>
-
-    <!-- Animated SVG Background -->
-    <div class="svg-background">
-        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 27.9.6, SVG Export Plug-In . SVG Version: 9.03 Build 54986)  -->
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 943.2 576" style="enable-background:new 0 0 943.2 576;" xml:space="preserve">
-
-<g id="layer1">
+<style type="text/css">
+	.st0{fill:#4F1116;}
+	.st1{fill:#4F1116;stroke:#4F1116;stroke-width:0.5673;stroke-linejoin:round;stroke-miterlimit:10;}
+	.st2{fill:#4F1116;stroke:#4F1116;stroke-width:0.9514;stroke-miterlimit:10;}
+	.st3{fill:#802F29;}
+</style>
+<g id="Layer_1">
 	<g>
 		<g>
 			<path class="st0" d="M101,234.6c-1-0.9-2.6-0.7-4-0.8c-0.8,0-1.5-0.4-2.2-0.6c-2-0.6-4.3-0.7-6.2,0.3c-1.3,0.6-2.4,1.5-3.3,2.6
@@ -3482,7 +3477,7 @@
 			<ellipse transform="matrix(0.2836 -0.9589 0.9589 0.2836 127.0063 542.0973)" class="st2" cx="426.3" cy="186" rx="0.9" ry="0.3"/>
 	</g>
 </g>
-<g id="layer2">
+<g id="Layer_2">
 	<g>
 		<g>
 			<path class="st0" d="M12.7,249.4c6.7-2.1,13.6-5,19.4-9.1c5.5-3.9,10.7-9.1,12.6-15.7c0.4-2.1,3.5-1.9,3.7,0.2
@@ -5080,45 +5075,3 @@
 	</g>
 </g>
 </svg>
-
-    </div>
-
-    <!-- Type Container -->
-    <div class="type-container">
-        <h1>Full Name</h1>
-        <h2>Title</h2>
-    </div>
-
-    <!-- Fixed Bottom Container -->
-    <div class="bottom-container">
-        <div class="icon">
-            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 180 180" style="enable-background:new 0 0 180 180;" xml:space="preserve">
-
-<g>
-	<rect x="25.4" y="68.4" class="st0" width="30" height="90.4"/>
-	<path class="fill" d="M78.3,68.7v90.6h29.7v-40.1c0,0-0.3-16.2,14.9-16.1c9,0.1,13.7,5.5,14.4,15.5v40.6h30.3V98.8
-		c0,0-0.6-23.6-26.1-29.1c-13.1-2.8-20.8,1.6-33.5,9.6l-0.3-10.7H78.3z"/>
-	<circle class="fill" cx="40.4" cy="29.6" r="16.7"/>
-</g>
-</svg>
-
-
-        </div>
-        <div class="icon">
-            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 180 144" style="enable-background:new 0 0 180 144;" xml:space="preserve">
-
-<g>
-	<path class="fill" d="M41.3,21h94.6c0,0,26.2-2.3,26.2,22.7v48.9c0,0,0.1,23.9-23,23.9H43.6c0,0-25.6,1.1-25.6-25.9V41.4
-		C18,41.4,18,21,41.3,21z"/>
-	<path class="fill" d="M26.3,27.3l44.6,35.8c0,0,18.7,16.8,37.4,0l44-37.2"/>
-</g>
-</svg>
-
-        </div>
-        
-    </div>
-
-</body>
-</html>

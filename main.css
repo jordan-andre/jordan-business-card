@@ -16,6 +16,7 @@ body{
     height:450px;
     background-color: #ffffff;
     z-index: 70;
+    top:80px;
    }
 
   
@@ -25,7 +26,7 @@ h1{
   color: rgb(0, 0, 0);
   text-align: right;
   padding-right: 20px;
-  
+  padding-top: 300px;
   
 }
 h2{
@@ -41,43 +42,42 @@ h2{
     fill: #172601;
     stroke-width: 0px;
     position: absolute;
-    width: 300px;
+    width: 450px;
     height: auto;
-    right: 50px;
-    bottom: 220px;
+    right: -60px;
+    bottom: 140px;
   }
    
 /* Animated SVG Background */
 .svg-background {
   position: absolute;
-  top: 0;
+  top: -40px;  /* moves the background image up */
   left: 50%;
   transform: translateX(-50%);
   width: 100vw;
   height: 100vh;
-  overflow: hidden;
-  z-index: 0;
+  /* overflow: hidden; */
+  z-index: 1;
 }
 
 .svg-background svg {
-  width: 100%;
-  height: 100%;
+  width: 140%;  /* zooms in image */
+  height: auto;
   display: block;
   preserveaspectratio: xMidYMid slice; /* Ensures the circle is always centered */
-  transform: scale (10); /* Adjusts the size of the SVG circle */
 }
 
 
   #full-fruit {
-    animation: layer1move 4s infinite;
+    animation: full-fruitmove 4s infinite;
   }
   
-  @keyframes layer1move {
+  @keyframes full-fruitmove {
     0% {
       transform: translate(0, 0px);
     }
     50% {
-      transform: translate(80px, -80px); /* Move diagonally to the top right */
+      transform: translate(10px, -80px); /* Move diagonally to the top right */
     }
     100% {
       transform: translate(0, 0px);
@@ -85,30 +85,30 @@ h2{
   }
   
   #half-fruit {
-    animation: layer2move 4s infinite;
+    animation: half-fruitmove 4s infinite;
   }
   
-  @keyframes layer2move {
+  @keyframes half-fruitmove {
     0% {
       transform: translate(0, 0px);
     }
     50% {
-      transform: translate(-80px, 80px); /* Move diagonally to the bottom right */
+      transform: translate(-40px, 50px); /* Move diagonally to the bottom left */
     }
     100% {
       transform: translate(0, 0px);
     }
   }
 
-
+/* background image style */
 .st0{fill:none;}
-	   .st1{fill:#4F1116;}
-	   .st2{fill:none;stroke:#4F1116;stroke-width:0.9514;stroke-miterlimit:10;}
+	   .st1{fill:#51080e;}
+	   .st2{fill:none;stroke:#51080e;stroke-width:0.9514;stroke-miterlimit:10;}
 	   .st3{fill:url(#SVGID_1_);}
 	   .st4{fill:url(#SVGID_00000083075346787851922020000009545188287479116680_);}
 
 
-
+/* icon style */
 .fill {
   fill: none;
   stroke: #010101;
@@ -134,29 +134,7 @@ h2{
   }
 }
 
-/* Type Container */
-.type-container {
-  position: absolute;
-  top: 20%;
-  text-align: center;
-  color: #333;
-  z-index: 2;
-  width: 100%;
-  animation: fadeIn 1s ease-in-out;
-}
-
-.type-container h1 {
-  font-size: 3rem;
-  font-weight: bold;
-}
-
-.type-container h2 {
-  font-size: 1.5rem;
-  font-weight: normal;
-}
-
-/* Fixed Bottom Container */
-.bottom-container {
+.icon-container {
   position: fixed;
   bottom: 0;
   width: 100%;
@@ -166,7 +144,6 @@ h2{
   padding: 10px;
   text-align: center;
   z-index: 2;
-  animation: fadeIn 1.5s ease-in-out;
 }
 
 /* Icon Hover Effects */

@@ -64,64 +64,50 @@ h2{
   height: 100%;
   display: block;
   preserveaspectratio: xMidYMid slice; /* Ensures the circle is always centered */
+  transform: scale (10); /* Adjusts the size of the SVG circle */
 }
 
 
-  #layer1 {
+  #full-fruit {
     animation: layer1move 4s infinite;
   }
   
   @keyframes layer1move {
     0% {
-      transform: translate(0, 4px);
+      transform: translate(0, 0px);
     }
     50% {
-      transform: translate(50px, 100px);
+      transform: translate(80px, -80px); /* Move diagonally to the top right */
     }
     100% {
-      transform: translate(0, 4px);
+      transform: translate(0, 0px);
     }
   }
   
-  #layer2 {
+  #half-fruit {
     animation: layer2move 4s infinite;
   }
   
   @keyframes layer2move {
     0% {
-      transform: translate(0, 4px);
+      transform: translate(0, 0px);
     }
     50% {
-      transform: translate(-50px, -100px);
+      transform: translate(-80px, 80px); /* Move diagonally to the bottom right */
     }
     100% {
-      transform: translate(0, 4px);
+      transform: translate(0, 0px);
     }
   }
 
-/* .fill {
-  fill: #4f1116;
-} */
-#layer1 {
-  fill: #4f1116;
-  stroke: #4f1116;
-  stroke-width: 0.5673;
-  stroke-linejoin: round;
-  stroke-miterlimit: 10;
-}
 
-#layer2{
- fill:#802F29;}
+.st0{fill:none;}
+	   .st1{fill:#4F1116;}
+	   .st2{fill:none;stroke:#4F1116;stroke-width:0.9514;stroke-miterlimit:10;}
+	   .st3{fill:url(#SVGID_1_);}
+	   .st4{fill:url(#SVGID_00000083075346787851922020000009545188287479116680_);}
 
-/* .st2 {
-  fill: #4f1116;
-  stroke: #4f1116;
-  stroke-width: 0.9514;
-  stroke-miterlimit: 10;
-} */
-/* .st3 {
-  fill: #802f29;
-} */
+
 
 .fill {
   fill: none;

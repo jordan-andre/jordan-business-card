@@ -8,6 +8,7 @@
 body{
   background-color: #802e29;
   font-family: "bodoni-urw", serif;
+  overflow: hidden;
 }
 .card{
     margin: auto;
@@ -26,7 +27,7 @@ h1{
   color: rgb(0, 0, 0);
   text-align: right;
   padding-right: 20px;
-  padding-top: 300px;
+  padding-top: 200px;
   
 }
 h2{
@@ -53,7 +54,7 @@ h2{
   position: absolute;
   top: -40px;  /* moves the background image up */
   left: 50%;
-  transform: translateX(-50%);
+  transform: translate(-50%,-50%);
   width: 100vw;
   height: 100vh;
   /* overflow: hidden; */
@@ -176,6 +177,7 @@ h2{
 
 /* Mobile Layout */
 @media (max-width: 768px) {
+
     .svg-background {
       width: 200%; /* Expands SVG for mobile cropping */
       left: 50%;
@@ -183,17 +185,19 @@ h2{
     }
 
     .svg-background svg {
-            width: 200%;
+            width: 200%; /* Adjust the width for mobile */
             height: auto;
             display: block;
+            transform: translateY(-20%); /* Adjust the Y translation to control vertical cropping */
         }
 
-    .pulse-circle {
-      cx: 50%;
-      cy: 50%;
-      transform-origin: center;
+    .card {
+      top: 100px; /* Adjust the top position for mobile */
+     
     }
-  }
+
+
+}
 
   .type-container h1 {
     font-size: 2rem;
@@ -216,4 +220,4 @@ h2{
     justify-content: center;
     align-items: center;
   }
-}
+

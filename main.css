@@ -176,7 +176,6 @@ h2{
 
 /* Mobile Layout */
 @media (max-width: 768px) {
-  @media (max-width: 768px) {
     .svg-background {
       width: 200%; /* Expands SVG for mobile cropping */
       left: 50%;

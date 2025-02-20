@@ -182,11 +182,11 @@ h2{
       transform: translateX(-50%);
     }
 
-    /* .svg-background svg {
-            width: 150%;
-            height: 100%;
+    .svg-background svg {
+            width: 200%;
+            height: auto;
             display: block;
-        } */
+        }
 
     .pulse-circle {
       cx: 50%;

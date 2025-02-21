@@ -27,11 +27,11 @@ h1{
   color: rgb(0, 0, 0);
   text-align: right;
   padding-right: 20px;
-  padding-top: 200px;
+  padding-top: 280px;
   
 }
 h2{
-  font-weight: normal;
+  font-weight: bold;
   font-size: 18px;
   color: rgb(0, 0, 0);
   text-align: right;
@@ -108,28 +108,12 @@ h2{
 	   .st4{fill:url(#SVGID_00000083075346787851922020000009545188287479116680_);}
 
 
-/* icon style */
-.email-icon {
-    fill:none;
-    stroke:#010101;
-    stroke-width:5.014;
-    stroke-miterlimit:10;
-    width:100px;
-    height:auto; 
-  }
-
-.linkedin-icon {
-  fill:none;
-  stroke:#010101;
-  stroke-width:4.6735;
-  stroke-linejoin:round;
-  stroke-miterlimit:10;
-}
-
+/* icon styling */
 .icon-container {
-  position: fixed;
+  position: relative; /* keeps icons in card */
   bottom: 0;
-  width: 300px;
+  left: 130px;
+  width: 170px;
   height: auto;
   display: flex;
   justify-content: space-around;
@@ -138,6 +122,28 @@ h2{
   text-align: center;
   z-index: 72;
 }
+
+#email {
+    fill:none;
+    stroke:#010101;
+    stroke-width:5.014;
+    stroke-miterlimit:10;
+    width:70px;
+    height:auto; 
+    margin-top: 15px; /* line up with linkedin icon */
+  }
+
+#linkedin {
+  fill:none;
+  stroke:#010101;
+  stroke-width:4.6735;
+  stroke-linejoin:round;
+  stroke-miterlimit:10;
+  width:70px;
+  height:auto;
+}
+
+
 
 /* Icon Hover Effects */
 .email-icon {

@@ -52,12 +52,11 @@ h2{
 /* Animated SVG Background */
 .svg-background {
   position: absolute;
-  top: -40px;  /* moves the background image up */
+  top: 60px;  /* negative moves the background image up, positive moves it down */
   left: 50%;
   transform: translate(-50%,-50%);
   width: 100vw;
   height: 100vh;
-  /* overflow: hidden; */
   z-index: 1;
 }
 
@@ -65,7 +64,7 @@ h2{
   width: 140%;  /* zooms in image */
   height: auto;
   display: block;
-  preserveaspectratio: xMidYMid slice; /* Ensures the circle is always centered */
+  /* preserveAspectRatio: xMidYMid slice; Ensures the circle is always centered */
 }
 
 
@@ -110,45 +109,39 @@ h2{
 
 
 /* icon style */
-.fill {
-  fill: none;
-  stroke: #010101;
-  stroke-width: 4.6735;
-  stroke-linejoin: round;
-  stroke-miterlimit: 10;
-}
-
-/* Circle Animation */
-.pulse-circle {
-  animation: pulse 2s infinite alternate ease-in-out;
-}
-
-/* Pulse Animation */
-@keyframes pulse {
-  from {
-    r: 250;
-    fill: lightblue;
+.email-icon {
+    fill:none;
+    stroke:#010101;
+    stroke-width:5.014;
+    stroke-miterlimit:10;
+    width:100px;
+    height:auto; 
   }
-  to {
-    r: 300;
-    fill: deepskyblue;
-  }
+
+.linkedin-icon {
+  fill:none;
+  stroke:#010101;
+  stroke-width:4.6735;
+  stroke-linejoin:round;
+  stroke-miterlimit:10;
 }
 
 .icon-container {
   position: fixed;
   bottom: 0;
-  width: 100%;
+  width: 300px;
+  height: auto;
   display: flex;
   justify-content: space-around;
   background: none;
   padding: 10px;
   text-align: center;
-  z-index: 2;
+  z-index: 72;
 }
 
 /* Icon Hover Effects */
-.icon {
+.email-icon {
+  width: 100px;
   display: flex;
   justify-content: center;
   align-items: center;

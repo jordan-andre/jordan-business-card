@@ -7,7 +7,7 @@
 
 body{
   background-color: #802e29;
-  font-family: "bodoni-urw", serif;
+  font-family: "futura-pt", sans-serif;
   overflow: hidden;
 }
 .card{
@@ -22,8 +22,9 @@ body{
 
   
 h1{
-  font-weight: bold;
-  font-size: 30px;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 35px;
   color: rgb(0, 0, 0);
   text-align: right;
   padding-right: 20px;
@@ -31,8 +32,9 @@ h1{
   
 }
 h2{
-  font-weight: bold;
-  font-size: 18px;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
   color: rgb(0, 0, 0);
   text-align: right;
   padding-right: 20px;
@@ -43,10 +45,10 @@ h2{
     fill: #172601;
     stroke-width: 0px;
     position: absolute;
-    width: 450px;
+    width: 480px;
     height: auto;
-    right: -60px;
-    bottom: 140px;
+    right: -90px;
+    bottom: 120px;
   }
    
 /* Animated SVG Background */
@@ -111,7 +113,7 @@ h2{
 /* icon styling */
 .icon-container {
   position: relative; /* keeps icons in card */
-  bottom: 0;
+  bottom: 10px;
   left: 130px;
   width: 170px;
   height: auto;

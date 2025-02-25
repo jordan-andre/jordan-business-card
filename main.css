@@ -169,20 +169,19 @@ h2 {
 
 /* Mobile Layout */
 @media (max-width: 768px) {
-  /* .svg-background {
+  .svg-background {
     width: 200%; /* Expands SVG for mobile cropping */
-    /* left: 50%;
+    left: 50%;
     transform: translateX(-50%);
-  } */ */
+    top: 60px;
+  }
 
   .svg-background svg {
     width: 200%; /* Adjust the width for mobile */
     height: auto;
     display: block;
-    transform: translateY(
-      -20%
-    ); /* Adjust the Y translation to control vertical cropping */
-    overflow: hidden;
+    transform: translateY(-20%);
+     /* Adjust the Y translation to control vertical cropping */
   }
 
   .card {

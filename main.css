@@ -40,7 +40,7 @@ h2 {
 }
 
 .logo-container {
-  fill: #53820d;
+  fill: #2e4a04;
   stroke-width: 0px;
   position: absolute;
   width: 480px;
@@ -104,11 +104,11 @@ h2 {
   fill: none;
 }
 .st1 {
-  fill: #57030a;
+  fill: #6e050e;
 }
 .st2 {
   fill: none;
-  stroke: #57030a;
+  stroke: #6e050e;
   stroke-width: 0.9514;
   stroke-miterlimit: 10;
 }
@@ -189,7 +189,7 @@ h2 {
   }
 
   .logo-container {
-    fill: #53820d;
+    fill: #2e4a04;
   }
 
   .type-container h1 {

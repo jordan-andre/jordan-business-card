@@ -191,4 +191,13 @@ h2 {
   .logo-container {
     fill: #172601;
   }
+
+  .type-container h1 {
+    font-size: 2rem;
+  }
+
+  .type-container h2 {
+    font-size: 1.2rem;
+  }
+
 }

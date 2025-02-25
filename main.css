@@ -5,23 +5,22 @@
   box-sizing: border-box;
 }
 
-body{
+body {
   background-color: #802e29;
   font-family: "futura-pt", sans-serif;
   overflow: hidden;
 }
-.card{
-    margin: auto;
-    position: relative;
-    width:300px;
-    height:450px;
-    background-color: #ffffff;
-    z-index: 70;
-    top:80px;
-   }
+.card {
+  margin: auto;
+  position: relative;
+  width: 300px;
+  height: 450px;
+  background-color: #ffffff;
+  z-index: 70;
+  top: 80px;
+}
 
-  
-h1{
+h1 {
   font-weight: 700;
   font-style: normal;
   font-size: 35px;
@@ -29,9 +28,8 @@ h1{
   text-align: right;
   padding-right: 20px;
   padding-top: 280px;
-  
 }
-h2{
+h2 {
   font-weight: 400;
   font-style: normal;
   font-size: 20px;
@@ -41,74 +39,85 @@ h2{
   bottom: 0;
 }
 
-.logo-container{
-    fill: #172601;
-    stroke-width: 0px;
-    position: absolute;
-    width: 480px;
-    height: auto;
-    right: -90px;
-    bottom: 120px;
-  }
-   
+.logo-container {
+  fill: #172601;
+  stroke-width: 0px;
+  position: absolute;
+  width: 480px;
+  height: auto;
+  right: -90px;
+  bottom: 120px;
+}
+
 /* Animated SVG Background */
 .svg-background {
   position: absolute;
-  top: 60px;  /* negative moves the background image up, positive moves it down */
+  top: 60px; /* negative moves the background image up, positive moves it down */
   left: 50%;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
   width: 100vw;
   height: 100vh;
   z-index: 1;
 }
 
 .svg-background svg {
-  width: 140%;  /* zooms in image */
+  width: 140%; /* zooms in image */
   height: auto;
   display: block;
   /* preserveAspectRatio: xMidYMid slice; Ensures the circle is always centered */
 }
 
+#full-fruit {
+  animation: full-fruitmove 4s infinite;
+}
 
-  #full-fruit {
-    animation: full-fruitmove 4s infinite;
+@keyframes full-fruitmove {
+  0% {
+    transform: translate(0, 0px);
   }
-  
-  @keyframes full-fruitmove {
-    0% {
-      transform: translate(0, 0px);
-    }
-    50% {
-      transform: translate(10px, -80px); /* Move diagonally to the top right */
-    }
-    100% {
-      transform: translate(0, 0px);
-    }
+  50% {
+    transform: translate(10px, -80px); /* Move diagonally to the top right */
   }
-  
-  #half-fruit {
-    animation: half-fruitmove 4s infinite;
+  100% {
+    transform: translate(0, 0px);
   }
-  
-  @keyframes half-fruitmove {
-    0% {
-      transform: translate(0, 0px);
-    }
-    50% {
-      transform: translate(-40px, 50px); /* Move diagonally to the bottom left */
-    }
-    100% {
-      transform: translate(0, 0px);
-    }
+}
+
+#half-fruit {
+  animation: half-fruitmove 4s infinite;
+}
+
+@keyframes half-fruitmove {
+  0% {
+    transform: translate(0, 0px);
   }
+  50% {
+    transform: translate(-40px, 50px); /* Move diagonally to the bottom left */
+  }
+  100% {
+    transform: translate(0, 0px);
+  }
+}
 
 /* background image style */
-.st0{fill:none;}
-	   .st1{fill:#51080e;}
-	   .st2{fill:none;stroke:#51080e;stroke-width:0.9514;stroke-miterlimit:10;}
-	   .st3{fill:url(#SVGID_1_);}
-	   .st4{fill:url(#SVGID_00000083075346787851922020000009545188287479116680_);}
-
+.st0 {
+  fill: none;
+}
+.st1 {
+  fill: #51080e;
+}
+.st2 {
+  fill: none;
+  stroke: #51080e;
+  stroke-width: 0.9514;
+  stroke-miterlimit: 10;
+}
+.st3 {
+  fill: url(#SVGID_1_);
+}
+.st4 {
+  fill: url(#SVGID_00000083075346787851922020000009545188287479116680_);
+}
 
 /* icon styling */
 .icon-container {
@@ -126,23 +135,23 @@ h2{
 }
 
 #email {
-    fill:none;
-    stroke:#010101;
-    stroke-width:5.014;
-    stroke-miterlimit:10;
-    width:70px;
-    height:auto; 
-    margin-top: 15px; /* line up with linkedin icon */
-  }
+  fill: none;
+  stroke: #010101;
+  stroke-width: 5.014;
+  stroke-miterlimit: 10;
+  width: 70px;
+  height: auto;
+  margin-top: 15px; /* line up with linkedin icon */
+}
 
 #linkedin {
-  fill:none;
-  stroke:#010101;
-  stroke-width:4.6735;
-  stroke-linejoin:round;
-  stroke-miterlimit:10;
-  width:70px;
-  height:auto;
+  fill: none;
+  stroke: #010101;
+  stroke-width: 4.6735;
+  stroke-linejoin: round;
+  stroke-miterlimit: 10;
+  width: 70px;
+  height: auto;
 }
 
 /* Hover Effect */
@@ -160,25 +169,27 @@ h2{
 
 /* Mobile Layout */
 @media (max-width: 768px) {
+  .svg-background {
+    width: 200%; /* Expands SVG for mobile cropping */
+    left: 50%;
+    transform: translateX(-50%);
+  }
 
-    .svg-background {
-      width: 200%; /* Expands SVG for mobile cropping */
-      left: 50%;
-      transform: translateX(-50%);
-    }
+  .svg-background svg {
+    width: 200%; /* Adjust the width for mobile */
+    height: auto;
+    display: block;
+    transform: translateY(
+      -20%
+    ); /* Adjust the Y translation to control vertical cropping */
+    overflow: hidden;
+  }
 
-    .svg-background svg {
-            width: 200%; /* Adjust the width for mobile */
-            height: auto;
-            display: block;
-            transform: translateY(-20%); /* Adjust the Y translation to control vertical cropping */
-        }
+  .card {
+    top: 100px; /* Adjust the top position for mobile */
+  }
 
-    .card {
-      top: 100px; /* Adjust the top position for mobile */
-     
-    }
-
-
+  .logo-container {
+    fill: #172601;
+  }
 }
-

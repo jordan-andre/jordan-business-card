@@ -145,35 +145,17 @@ h2{
   height:auto;
 }
 
-
-
-/* Icon Hover Effects */
-.email-icon {
-  width: 100px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 10px;
-  cursor: pointer;
-  transition: transform 0.2s ease, opacity 0.2s ease;
-}
-
 /* Hover Effect */
-.icon:hover {
+#linkedin:hover {
   transform: scale(1.2);
-  opacity: 0.8;
+  /* opacity: 0.8; */
+  stroke: #51080e;
 }
 
-/* Fade-in Animation */
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(10px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+#email:hover {
+  transform: scale(1.2);
+  /* opacity: 0.8; */
+  stroke: #51080e;
 }
 
 /* Mobile Layout */
@@ -199,26 +181,4 @@ h2{
 
 
 }
-
-  .type-container h1 {
-    font-size: 2rem;
-  }
-
-  .type-container h2 {
-    font-size: 1.2rem;
-  }
-
-  .bottom-container {
-    width: 100vw; /* Ensures it spans the full width */
-    display: flex;
-    justify-content: space-between; /* Ensures even spacing */
-    padding: 15px;
-  }
-
-  .icon {
-    flex: 1; /* Ensures icons stretch evenly */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
 

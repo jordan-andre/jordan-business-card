@@ -6,7 +6,7 @@
 }
 
 body {
-  background-color: #b75a55;
+  background-color: #b44c47;
   font-family: "futura-pt", sans-serif;
   overflow: hidden;
 }
@@ -40,7 +40,7 @@ h2 {
 }
 
 .logo-container {
-  fill: #92df1f;
+  fill: #53820d;
   stroke-width: 0px;
   position: absolute;
   width: 480px;
@@ -104,11 +104,11 @@ h2 {
   fill: none;
 }
 .st1 {
-  fill: #51080e;
+  fill: #57030a;
 }
 .st2 {
   fill: none;
-  stroke: #51080e;
+  stroke: #57030a;
   stroke-width: 0.9514;
   stroke-miterlimit: 10;
 }
@@ -158,13 +158,13 @@ h2 {
 #linkedin:hover {
   transform: scale(1.2);
   /* opacity: 0.8; */
-  stroke: #51080e;
+  stroke: #57030a;
 }
 
 #email:hover {
   transform: scale(1.2);
   /* opacity: 0.8; */
-  stroke: #51080e;
+  stroke: #57030a;
 }
 
 /* Mobile Layout */
@@ -189,7 +189,7 @@ h2 {
   }
 
   .logo-container {
-    fill: #92df1f;
+    fill: #53820d;
   }
 
   .type-container h1 {

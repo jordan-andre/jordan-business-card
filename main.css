@@ -49,6 +49,7 @@ h2 {
   bottom: 120px;
 }
 
+
 /* Animated SVG Background */
 .svg-background {
   position: absolute;
@@ -68,7 +69,7 @@ h2 {
 }
 
 #full-fruit {
-  animation: full-fruitmove 4s infinite;
+  animation: full-fruitmove 7s infinite;
 }
 
 @keyframes full-fruitmove {
@@ -84,7 +85,7 @@ h2 {
 }
 
 #half-fruit {
-  animation: half-fruitmove 4s infinite;
+  animation: half-fruitmove 7s infinite;
 }
 
 @keyframes half-fruitmove {
@@ -122,53 +123,44 @@ h2 {
 /* icon styling */
 .icon-container {
   position: relative; /* keeps icons in card */
-  bottom: 10px;
-  left: 130px;
-  width: 170px;
+  width: 300px;
   height: auto;
   display: flex;
   justify-content: space-around;
   background: none;
-  padding: 10px;
-  text-align: center;
+  padding: 7px;
+  align-items: center;
   z-index: 72;
+  overflow: visible;
 }
 
 #email {
-  fill: none;
-  stroke: #010101;
-  stroke-width: 5.014;
-  stroke-miterlimit: 10;
-  width: 70px;
-  height: auto;
-  margin-top: 15px; /* line up with linkedin icon */
+  fill: black;
+  width: auto;
+  height: 60px;
+  
 }
 
 #linkedin {
-  fill: none;
-  stroke: #010101;
-  stroke-width: 4.6735;
-  stroke-linejoin: round;
-  stroke-miterlimit: 10;
-  width: 70px;
-  height: auto;
+  fill: black;
+  width: auto;
+  height: 50px;
 }
 
 /* Hover Effect */
 #linkedin:hover {
   transform: scale(1.2);
-  /* opacity: 0.8; */
-  stroke: #57030a;
+  fill: #6e050e;
 }
 
 #email:hover {
-  transform: scale(1.2);
-  /* opacity: 0.8; */
-  stroke: #57030a;
+  transform: scale(1.1);
+  transform-origin: center;
+  fill: #6e050e;
 }
 
 /* Mobile Layout */
-@media (max-width: 768px) {
+@media (max-width: 799px) {
   .svg-background {
     width: 200%; /* Expands SVG for mobile cropping */
     left: 50%;
